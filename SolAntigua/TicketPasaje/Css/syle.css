@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Imagenes/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    backdrop-filter: blur(4px);
+
+}
+.Principal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+   -5px 5px 10px rgba(0, 0, 0, 0.5),
+    5px -5px 10px rgba(0, 0, 0, 0.5),
+   -5px -5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.TodoTicket{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+.ImagenLogo{
+    height: 100px;
+    width: 250px;
+}
+
+.Informacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.Fecha{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    gap: 15px;
+
+    .TextoFecha, .InfoHora{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        padding: 3px;
+    }
+
+    .TextoFecha{
+        display: flex;
+        width: 70%;
+    }
+
+
+    .InfoHora{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 30%;
+        border-left: 1px;
+        border-left-color: black;
+        border-left-style: solid;
+    }   
+}
+.InformacionFinal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.Viaje{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 3px;
+
+    .TextoOrigen , .TextoDestino{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+    }
+}
+
+.InformacionDelTicket{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-top: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+
+    .TipoTicket{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        padding: 10px;
+        height: 100%;
+        width: 60%;
+
+        .TextoTipoTicket, .NumeroTicket{
+            display: flex;
+            height: 100%;
+            width: 50%;
+        }
+
+    }
+
+    .ValorTicket{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 40%;
+        border-left: 1px;
+        border-left-color: black;
+        border-left-style: solid;
+    }
+}
